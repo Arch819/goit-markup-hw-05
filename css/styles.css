@@ -60,12 +60,15 @@ img {
     padding-bottom: 120px;
 }
 
+button {
+    cursor: pointer;
+}
+
 .btn {
     display: inline-block;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.04em;
-    cursor: pointer;
     border-radius: 4px;
 
     transition-property: color, border-color, box-shadow, background;
