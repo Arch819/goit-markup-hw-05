@@ -80,7 +80,9 @@ button {
 .btn:focus,
 .team-network .social-netwerk-link:hover,
 .team-network .social-netwerk-link:focus,
-.active::after {
+.active::after,
+.close-btn:hover,
+.close-btn:focus {
     background: var(--color-pressed-state);
 }
 
@@ -264,14 +266,22 @@ button {
     background: var(--color-accent-text);
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+
+    transition: background var(--time-transition-duration) var(--transition-timing-function);
 }
 
 .icon-close-btn {
     width: 8px;
     height: 8px;
     fill: var(--background-color-text);
+
+    transition: color var(--time-transition-duration) var(--transition-timing-function);
 }
 
+.close-btn:hover .icon-close-btn,
+.close-btn:focus .icon-close-btn{
+    fill: var(--color-hover-heading);
+}
 /*?------------------------------------ hero--------------------------------------- */
 .hero {
     background-color: var(--background-color-text);
